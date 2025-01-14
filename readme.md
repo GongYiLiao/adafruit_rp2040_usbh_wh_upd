@@ -29,7 +29,7 @@ void c1_usbh(void) {
 
 ## Available keymaps
 
-I made some layouts in `info.json` and corresponding `keymap.c` for DVORAK typist: 
+I made some layouts in `info.json` and corresponding `keymap.c` for [DVORAK](https://en.wikipedia.org/wiki/Dvorak_keyboard_layout) typist: 
 
 * [Kinesis Advantage MPC (KB500)](https://www.kinesis-ergo.com/wp-content/uploads/kb500-user_manual.pdf) under `keymaps/ka500`
 * Generic ANSI 104 layout under `keymaps/ansi`, test on [Topre Type Heaven](https://deskthority.net/wiki/Topre_Type_Heaven)
