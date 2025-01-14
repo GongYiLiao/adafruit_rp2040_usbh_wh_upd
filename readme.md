@@ -4,7 +4,7 @@
 
 This was originally based on [Sekigon's Keyboard Quantizer mini-full branch](https://github.com/sekigon-gonnoc/qmk_firmware/tree/keyboard/sekigon/keyboard_quantizer/mini-full/keyboards/sekigon/keyboard_quantizer/mini). with updates/corrections from [whyaaronbailey](https://github.com/whyaaronbailey/adafruit_rp2040_usbh)
 
-The change made here is to specify `DP+` Pin as 16 (thus `DP-` is 17) and the 5V pin (18) in `c1_usbh.c`:
+The key original change I made to `Sekigon`'s codebase was to specify `DP+` Pin as 16 (thus `DP-` is 17) and the 5V pin (18) in `c1_usbh.c`:
 
 ```
 // Initialize USB host stack on core1
