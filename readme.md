@@ -38,7 +38,7 @@ I made some layouts in `info.json` and corresponding `keymap.c` for DVORAK typis
 After [setup your qmk envorinment](https://github.com/qmk/qmk_firmware/blob/master/docs/newbs_getting_started.md), clone this repository to `keyboards/converter` then run
 
 ```
-git clone https://github.com/GongYiLiao/qmk_AdaFruitRp2040USBH.git _your_qmk_repo/keyboards/converter/adafruit_rp2040_usbh
+git clone https://github.com/GongYiLiao/qmk_AdaFruitRp2040USBH_wh_upd.git _your_qmk_repo/keyboards/converter/adafruit_rp2040_usbh
 cd _your_qmk_repo/keyboards/converter/adafruit_rp2040_usbh
 git submodule update --init --recursive
 cd ../../..
