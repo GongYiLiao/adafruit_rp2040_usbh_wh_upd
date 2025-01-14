@@ -2,7 +2,7 @@
 
 # USB-to-USB convertor using [Adafruit RP2040 USB Host](https://www.adafruit.com/product/5723)
 
-This was originally based on [Sekigon's Keyboard Quantizer mini-full branch](https://github.com/sekigon-gonnoc/qmk_firmware/tree/keyboard/sekigon/keyboard_quantizer/mini-full/keyboards/sekigon/keyboard_quantizer/mini). with updates/corrections from [whyaaronbailey](https://github.com/whyaaronbailey/adafruit_rp2040_usbh)
+This was originally based on [Sekigon's Keyboard Quantizer mini-full branch](https://github.com/sekigon-gonnoc/qmk_firmware/tree/keyboard/sekigon/keyboard_quantizer/mini-full/keyboards/sekigon/keyboard_quantizer/mini). It is now based on updates/corrections from [whyaaronbailey](https://github.com/whyaaronbailey/adafruit_rp2040_usbh).
 
 The key original change I made to `Sekigon`'s codebase was to specify `DP+` Pin as 16 (thus `DP-` is 17) and the 5V pin (18) in `c1_usbh.c`:
 
