@@ -4,7 +4,7 @@
 
 This was originally based on [Sekigon's Keyboard Quantizer mini-full branch](https://github.com/sekigon-gonnoc/qmk_firmware/tree/keyboard/sekigon/keyboard_quantizer/mini-full/keyboards/sekigon/keyboard_quantizer/mini). It is now based on updates/corrections from [whyaaronbailey](https://github.com/whyaaronbailey/adafruit_rp2040_usbh).
 
-I didn't adequately addresed [`whyaaronbailey`'s question regarding compilation error](https://github.com/GongYiLiao/qmk_AdaFruitRp2040USBH/issues/1), therefore I archived the orginial repository and rebase it on `whyaaronbailey`'s better works.
+I didn't adequately respond to [`whyaaronbailey`'s question regarding compilation error](https://github.com/GongYiLiao/qmk_AdaFruitRp2040USBH/issues/1), therefore I archived the orginial repository and rebase it on `whyaaronbailey`'s better works.
 
 The key original change I made to `Sekigon`'s codebase was to specify `DP+` Pin as 16 (thus `DP-` is 17) and the 5V pin (18) in `c1_usbh.c`:
 
