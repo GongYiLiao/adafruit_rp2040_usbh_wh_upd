@@ -7,5 +7,5 @@ NKRO_ENABLE = yes
 
 VPATH += keyboards/converter/adafruit_rp2040_usbh/keymaps/lkg_common
 
-SRC += ../lkg_common/lkg_tap_dances.c
+INTROSPECTION_KEYMAP_C = ../lkg_common/lkg_tap_dances.c
 SRC += ../lkg_common/lkg_key_process.c
