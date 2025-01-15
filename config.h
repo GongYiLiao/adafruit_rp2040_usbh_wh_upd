@@ -6,7 +6,7 @@
 #define NO_DEBUG
 #define NO_PRINT
 #define FORCE_NKRO
-#define TAPPING_TERM 300
+#define TAPPING_TERM 150
 
 #ifdef CRT0_EXTRA_CORES_NUMBER
 #undef CRT0_EXTRA_CORES_NUMBER
