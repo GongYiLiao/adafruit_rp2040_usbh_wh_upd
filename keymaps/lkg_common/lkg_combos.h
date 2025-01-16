@@ -11,6 +11,7 @@ enum combos {
   Q_J_K_OSL_NAVI,
   M_W_V_OSL_NAVI,
   SCLN_X_MENU,
+  E12_TO_NVI,
 };
 
 const uint16_t PROGMEM combo_0[] =  {KC_DOT,     KC_P,          COMBO_END};
@@ -24,6 +25,7 @@ const uint16_t PROGMEM combo_7[] =  {KC_W,       KC_V,          COMBO_END};
 const uint16_t PROGMEM combo_8[] =  {KC_Q,       KC_J,   KC_K,  COMBO_END};
 const uint16_t PROGMEM combo_9[] =  {KC_M,       KC_W,   KC_V,  COMBO_END};
 const uint16_t PROGMEM combo_10[] = {KC_SCLN,    KC_X,          COMBO_END};
+const uint16_t PROGMEM combo_11[] = {KC_ESc,     KC_1,   KC_2,  COMBO_END};
 
 
 
@@ -39,4 +41,5 @@ combo_t key_combos[] = {
   [Q_J_K_OSL_NAVI]     = COMBO(combo_8,  OSL(_NAVI)),
   [M_W_V_OSL_NAVI]     = COMBO(combo_9,  OSL(_NAVI)),
   [SCLN_X_MENU]        = COMBO(combo_10, KC_APP),
+  [E12_TO_NVI]         = COMBO(combo_11, TO(_NAVI)),
 };
