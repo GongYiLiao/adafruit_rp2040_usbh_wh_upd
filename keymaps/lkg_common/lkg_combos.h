@@ -25,7 +25,7 @@ const uint16_t PROGMEM combo_7[] =  {KC_W,       KC_V,          COMBO_END};
 const uint16_t PROGMEM combo_8[] =  {KC_Q,       KC_J,   KC_K,  COMBO_END};
 const uint16_t PROGMEM combo_9[] =  {KC_M,       KC_W,   KC_V,  COMBO_END};
 const uint16_t PROGMEM combo_10[] = {KC_SCLN,    KC_X,          COMBO_END};
-const uint16_t PROGMEM combo_11[] = {KC_ESc,     KC_1,   KC_2,  COMBO_END};
+const uint16_t PROGMEM combo_11[] = {KC_ESC,     KC_1,   KC_2,  COMBO_END};
 
 
 

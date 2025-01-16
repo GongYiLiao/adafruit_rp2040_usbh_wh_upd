@@ -239,8 +239,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		       KC_NO,                                   KC_NO,            KC_NO,
 
 		       KC_TILD,
-		       KC_MS_BTN3,          KC_MS_BTN2,         KC_MS_U,          KC_MS_BTN1,       LSFT(KC_9),
-		       KC_PGUP,             KC_HOME,            KC_UP,            KC_END,           LSFT(KC_0),
+		       KC_MS_BTN3,          KC_MS_BTN2,         KC_MS_U,          KC_MS_BTN1,       KC_LPRN,
+		       KC_PGUP,             KC_HOME,            KC_UP,            KC_END,           KC_RPRN,
 		       KC_PSCR,
 
 		       KC_NO,               KC_NO,              KC_NO,            KC_NO,
