@@ -289,7 +289,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    |--------+------+------+------+------+------|                           +------+------+------+------+------+--------|      +------+------+------+------+
    |        |      |      |      | QM14 |      |                           |  QM0 |      | QM22 | QM23 | QM20 |        |      |      |      |      |      |
    |--------+------+------+------+------+------|                           |------+------+------+------+------+--------|      +------+------+------+------+
-   |        |      |      |      | QM19 | QM24 |                           | QM12 |      | QM21 |      |  QM1 |        |      |      |      |      |      |
+   |        |      |      | C-_  | QM19 | QM24 |                           | QM12 |      | QM21 |      |  QM1 |        |      |      |      |      |      |
    |--------+------+------+------+------+------|                           |------+------+------+------+------+--------|      +------+------+------+------+
    |        |      | QM18 |      | QM3  |      |                           |  QM2 |      |  QM8 |      |      |        |      |      |      |      |      |
    `--------+------+------+------+------+-------                           `------+------+------+------+------+--------'      +------+------+------+------'
@@ -357,26 +357,26 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 			  QK_MACRO_0,          KC_NO,              QK_MACRO_22,      QK_MACRO_23,      QK_MACRO_20,
 			  KC_NO,
 
-	   	                               KC_NO,              KC_NO,            KC_NO,            KC_NO,
+	   	          KC_NO,               KC_NO,              KC_NO,            KC_NO,
 
 			  KC_NO,
-			  KC_NO,               KC_NO,              KC_NO,            QK_MACRO_19,      QK_MACRO_24,
+			  KC_NO,               KC_NO,              LCTL(KC_UNDS),    QK_MACRO_19,      QK_MACRO_24,
 			  QK_MACRO_12,         KC_NO,              QK_MACRO_21,      KC_NO,            QK_MACRO_1,
 			  KC_NO,
 
- 		                               KC_NO,              KC_NO,            KC_NO,            KC_NO,
+ 		          KC_NO,               KC_NO,              KC_NO,            KC_NO,
 
 			  KC_NO,
 			  KC_NO,               QK_MACRO_18,        KC_NO,            QK_MACRO_3,       KC_NO,
 			  QK_MACRO_2,          KC_NO,              QK_MACRO_8,       KC_NO,            KC_NO,
 			  KC_NO,
 
-		                               KC_NO,              KC_NO,            KC_NO,            KC_NO,
+		          KC_NO,               KC_NO,             KC_NO,             KC_NO,
 
 			  KC_NO,               KC_NO,              KC_NO,            KC_NO,
 			  KC_NO,               KC_NO,              QK_MACRO_9,       QK_MACRO_10,
 
-                                                                   KC_NO,
+                          KC_NO,
 
 			  KC_NO,               QK_MACRO_28,
 			  QK_MACRO_29,         KC_NO,
