@@ -2,6 +2,8 @@
 
 # USB-to-USB convertor using [Adafruit RP2040 USB Host](https://www.adafruit.com/product/5723)
 
+As of 2025-11-28, it only works QMK 0.26 releases or older
+
 This was originally based on [Sekigon's Keyboard Quantizer mini-full branch](https://github.com/sekigon-gonnoc/qmk_firmware/tree/keyboard/sekigon/keyboard_quantizer/mini-full/keyboards/sekigon/keyboard_quantizer/mini). It is now based on updates/corrections from [whyaaronbailey](https://github.com/whyaaronbailey/adafruit_rp2040_usbh).
 
 I didn't adequately respond to [`whyaaronbailey`'s question regarding compilation error](https://github.com/GongYiLiao/qmk_AdaFruitRp2040USBH/issues/1), therefore I archived the original repository and rebase it on `whyaaronbailey`'s better works.
