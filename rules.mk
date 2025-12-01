@@ -1,6 +1,8 @@
 SRC += matrix.c c1_main.c c1_usbh.c tusb_os_custom.c
 CUSTOM_MATRIX = lite
 POINTING_DEVICE_DRIVER = custom
+PICO_PLATFORM = rp2040
+PICO_BOARD = adafruit_feather_rp2040_usb_host
 
 SRC += lib/Pico-PIO-USB/src/pio_usb.c
 SRC += lib/Pico-PIO-USB/src/pio_usb_host.c
@@ -9,6 +11,8 @@ VPATH += keyboards/converter/adafruit_rp2040_usbh/lib/Pico-PIO-USB/src
 
 SRC += lib/tinyusb/src/tusb.c
 SRC += lib/tinyusb/src/common/tusb_fifo.c
+# SRC += lib/tinyusb/hw/bsp/board.c
+# SRC += lib/tinyusb/hw/bsp/rp2040/family.c
 SRC += lib/tinyusb/src/host/usbh.c
 SRC += lib/tinyusb/src/host/hub.c
 SRC += lib/tinyusb/src/class/hid/hid_host.c
