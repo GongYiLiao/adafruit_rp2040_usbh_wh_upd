@@ -42,8 +42,8 @@ void dance_0_reset(tap_dance_state_t *state, void *user_data) {
 void dance_1_finished(tap_dance_state_t *state, void *user_data) {
   dance_state[1].step = dance_step(state);
   switch (dance_state[1].step) {
-  case SINGLE_TAP: register_code16(KC_F3); break;
-  case SINGLE_HOLD: register_code16(KC_WH_U); break;
+  case SINGLE_TAP: register_code16(KC_WH_U); break;
+  case SINGLE_HOLD: register_code16(KC_F3); break;
   case DOUBLE_TAP: break;
   case TAP_THEN_HOLD: break;
   case DOUBLE_SINGLE_TAP: break;
@@ -53,8 +53,8 @@ void dance_1_finished(tap_dance_state_t *state, void *user_data) {
 
 void dance_1_reset(tap_dance_state_t *state, void *user_data) {
   switch (dance_state[1].step) {
-  case SINGLE_TAP: unregister_code16(KC_F3); break;
-  case SINGLE_HOLD: unregister_code16(KC_WH_U); break;
+  case SINGLE_TAP: unregister_code16(KC_WH_U); break;
+  case SINGLE_HOLD: unregister_code16(KC_F3); break;
   case DOUBLE_TAP: break;
   case TAP_THEN_HOLD: break;
   case DOUBLE_SINGLE_TAP: break;
