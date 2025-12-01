@@ -31,6 +31,7 @@ bool osal_mutex_delete(osal_mutex_t mutex_hdl) {
 }
 
 #include <stdarg.h>
+#include <stdio.h>
 
 static char     debug_buffer[(1 << 12)];
 static uint32_t write_index = 0;
