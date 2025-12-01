@@ -239,21 +239,21 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		       KC_NO,                                   KC_NO,            KC_NO,
 
 		       KC_TILD,
-		       KC_MS_BTN3,          KC_MS_BTN2,         KC_MS_U,          KC_MS_BTN1,       KC_LPRN,
+		       MS_BTN3,          MS_BTN2,         MS_U,          MS_BTN1,       KC_LPRN,
 		       KC_PGUP,             KC_HOME,            KC_UP,            KC_END,           KC_RPRN,
 		       KC_PSCR,
 
 		       KC_NO,               KC_NO,              KC_NO,            KC_NO,
 
 		       KC_PLUS,
-		       KC_WH_L,             KC_MS_L,            KC_MS_D,          KC_MS_R,          KC_WH_R,
+		       MS_WHLL,             MS_L,            MS_D,          MS_R,          MS_WHLR,
 		       KC_PGDN,             KC_LEFT,            KC_DOWN,          KC_RIGHT,         KC_NO,
 		       TO(_DVORAK),
 
 		       KC_NO,               KC_NO,              KC_NO,            KC_NO,
 
 		       OSM(MOD_LSFT),
-		       KC_GRV,              KC_WBAK,            KC_WH_D,          KC_WFWD,          OSM(MOD_LGUI),
+		       KC_GRV,              KC_WBAK,            MS_WHLD,          KC_WFWD,          OSM(MOD_LGUI),
 		       OSM(MOD_RGUI),       KC_LBRC,            KC_RBRC,          KC_LCBR,          TD(DANCE_3),
 		       OSM(MOD_RSFT),
 

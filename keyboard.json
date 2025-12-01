@@ -1,6 +1,6 @@
 {
   "manufacturer": "Adafruit",
-  "keyboard_name": "Rp2040 USB Host",
+  "keyboard_name": "adafruit_rp2040_usbh",
   "maintainer": "sekigon-gonnoc",
   "bootloader": "rp2040",
   "diode_direction": "COL2ROW",
