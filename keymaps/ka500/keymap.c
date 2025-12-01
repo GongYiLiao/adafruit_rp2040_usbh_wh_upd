@@ -199,7 +199,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
    ,-------------------------------------------------------------------------------------------------------------------.     ,--------------------.
    |        |  F13 |  F14 |  F15 | F16  | F17  | F18  | F19  |  F20 | F21  |  F22 |  F23 |  F24 |      |      |	 NKRO  |     |      |      |      |
    |--------+------+------+------+------+------+---------------------------+------+------+------+------+------+--------.     +------+------+------+------.
-   |   F1   | F2   |  TD1 |  F4  |  F5  |  F6  |                           |  F7  |  F8  |  F9  |  F10 |  F11 |   F12  |     |      |      |      |      |
+   |   F1   | F2   |  F3  | TD1  |  F5  |  F6  |                           |  F7  |  F8  |  F9  |  F10 |  F11 |   F12  |     |      |      |      |      |
    |--------+------+------+------+------+------|                           +------+------+------+------+------+--------|     +------+------+------+------+
    |        | MB3  | MB2  | MCU  | MB1  |      |                           | PgUp | Home |  U   |  End |      |  SysRq |     |      |      |      |      |
    |--------+------+------+------+------+------|                           |------+------+------+------+------+--------|     +------+------+------+------+
@@ -239,14 +239,14 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		       KC_NO,                                   KC_NO,            KC_NO,
 
 		       KC_TILD,
-		       MS_BTN3,          MS_BTN2,         MS_U,          MS_BTN1,       KC_LPRN,
+		       MS_BTN3,             MS_BTN2,            MS_UP,            MS_BTN1,          KC_LPRN,
 		       KC_PGUP,             KC_HOME,            KC_UP,            KC_END,           KC_RPRN,
 		       KC_PSCR,
 
 		       KC_NO,               KC_NO,              KC_NO,            KC_NO,
 
 		       KC_PLUS,
-		       MS_WHLL,             MS_L,            MS_D,          MS_R,          MS_WHLR,
+		       MS_WHLL,             MS_LEFT,            MS_DOWN,          MS_RGHT,          MS_WHLR,
 		       KC_PGDN,             KC_LEFT,            KC_DOWN,          KC_RIGHT,         KC_NO,
 		       TO(_DVORAK),
 
