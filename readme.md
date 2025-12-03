@@ -2,7 +2,7 @@
 
 # USB-to-USB convertor using [Adafruit RP2040 USB Host](https://www.adafruit.com/product/5723)
 
-As of 2025-11-28, it only works QMK 0.26.11, PCIO\_PIO\_USB 0.6.1 and TinyUSB 0.17.0 or older
+As of 2025-11-28, it only works with QMK 0.26.11 or older, PCIO\_PIO\_USB 0.6.1 or older and TinyUSB 0.17.0 or older. 
 
 This was originally based on [Sekigon's Keyboard Quantizer mini-full branch](https://github.com/sekigon-gonnoc/qmk_firmware/tree/keyboard/sekigon/keyboard_quantizer/mini-full/keyboards/sekigon/keyboard_quantizer/mini). It is now based on updates/corrections from [whyaaronbailey](https://github.com/whyaaronbailey/adafruit_rp2040_usbh).
 
