@@ -31,6 +31,10 @@
 
 #define CFG_TUH_ENUMERATION_BUFSIZE 256
 
+#define CFG_TUD_ENABLE              1
+#define CFG_TUH_ENABLE              1
+#define CFG_TUH_RPI_PIO_USB         1	 
+
 #define CFG_TUH_HUB                 1
 #define CFG_TUH_DEVICE_MAX          (CFG_TUH_HUB ? 4 : 1) 
 
