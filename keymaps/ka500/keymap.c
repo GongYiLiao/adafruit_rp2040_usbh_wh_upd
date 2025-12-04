@@ -253,7 +253,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		       KC_NO,               KC_NO,              KC_NO,            KC_NO,
 
 		       OSM(MOD_LSFT),
-		       KC_GRV,              KC_WBAK,            KC_WH_D,          KC_WFWD,          OSM(MOD_LGUI),
+		       KC_NO,               KC_WBAK,            KC_WH_D,          KC_WFWD,          OSM(MOD_LGUI),
 		       OSM(MOD_RGUI),       KC_LBRC,            KC_RBRC,          KC_LCBR,          TD(DANCE_3),
 		       OSM(MOD_RSFT),
 
@@ -278,9 +278,95 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 		       KC_NO
 		       ),
 
+
 /*
 
-   Keymap: layer 3 - Emacs keybindings 0
+   Keymap: Symbols
+
+   ,---------------------------------------------------------------------------------------------------.                      ,--------------------.
+   |        |      |      |      |      |      |      |      |      |      |      |      |      |      |		      |      |      |      |
+   |--------+------+------+------+------+------+---------------------------+------+------+------+------+------+--------.      +------+------+------+------.
+   |  F13   | F14  | F15  | F16  | F17  | F18  |                           | F19  | F20  | F21  | F22  | F23  |  F24   |      |      |      |      |      |
+   |--------+------+------+------+------+------|                           +------+------+------+------+------+--------|      +------+------+------+------+
+   |   ~    |  !   |  @   |  #   |  $   |  %   |                           |  ^   |  &   |  *   |  (   |  )   |   ?    |      |      |      |      |      |
+   |--------+------+------+------+------+------|                           |------+------+------+------+------+--------|      +------+------+------+------+
+   |   +    |   `  | `_`  |      | '_'  |      |                           |      | "_"  |      |      |   |  |   _    |      |      |      |      |      |
+   |--------+------+------+------+------+------|                           |------+------+------+------+------+--------|      +------+------+------+------+
+   | LSHFT  |  TD  |  [   |  ]   |  {   |   }  |                           | <_>  | {_}  |  (_) |  [_] | RGUI |  RSHFT |      |      |      |      |      |
+   `--------+------+------+------+------+------'                           `------+------+------+------+------+--------'      +------+------+------+------'
+            |      |      |      |      |                                         |      |      |      |      |		                    |      |
+            `---------------------------'                                          ---------------------------'		                     ------'
+                                          ,-------------.         ,--------------.
+                                          |      |      |         |       |      |
+                                   ,------|------|------|         |-------+------+------.                                     ,------.
+                                   |      |      |      |         |       |      |      |                                     |      |
+                                   |      |      |------|         |-------|      |      |                                     |      |
+                                   |      |      |      |         |       |      |      |                                     |      |
+                                    --------------------'         `---------------------'                                     '------'
+
+
+*/
+
+[_SYMBOL] = LAYOUT_ka500(
+			 KC_NO,
+			 KC_NO,                  KC_NO,              KC_NO,            KC_NO,            KC_NO,           KC_NO,
+			 KC_NO,                  KC_NO,              KC_NO,            KC_NO,            KC_NO,           KC_NO,
+			 KC_NO,                  KC_NO,              KC_NO,
+
+			 KC_NO,                  KC_NO,              KC_NO,
+
+			 KC_F13,
+			 KC_F14,                 KC_F15,             KC_F16,           KC_F17,           KC_F18,
+			 KC_F19,                 KC_F20,             KC_F21,           KC_F22,           KC_F23,
+			 KC_F24,
+
+		                                 KC_NO,                                KC_NO,            KC_NO,
+
+			 RSFT(KC_GRV),
+			 RSFT(KC_1),             RSFT(KC_2),         RSFT(KC_3),       RSFT(KC_4),       RSFT(KC_5),
+			 LSFT(KC_6),             LSFT(KC_7),         LSFT(KC_8),       LSFT(KC_9),       LSFT(KC_0),
+			 LSFT(KC_SLSH),
+
+		                                 KC_NO,              KC_NO,            KC_NO,            KC_NO,
+
+			 RSFT(KC_EQL),
+			 KC_GRV,                 QK_MACRO_35,        KC_NO,            QK_MACRO_38,      QK_MACRO_36,
+			 KC_NO,                  QK_MACRO_37,        KC_NO,            KC_NO,            LSFT(KC_BSLS),
+			 LSFT(KC_MINS),
+
+		                                 KC_NO,              KC_NO,            KC_NO,            KC_NO,
+
+			 OSM(MOD_LSFT),
+			 TD(DANCE_4),            KC_LBRC,            KC_RBRC,          RSFT(KC_LBRC),    RSFT(KC_RBRC),
+			 QK_MACRO_34,            QK_MACRO_32,        QK_MACRO_25,      QK_MACRO_33,      OSM(MOD_RGUI),
+			 OSM(MOD_RSFT),
+
+		                                 KC_NO,              KC_NO,            KC_NO,            KC_NO,
+
+			 KC_NO,                  KC_NO,              KC_NO,            KC_NO,
+			 KC_NO,                  KC_NO,              KC_NO,            KC_NO,
+
+                                                                     KC_NO,
+
+			 KC_NO,                  KC_NO,
+			 KC_NO,                  KC_NO,
+
+			 KC_NO,                  KC_NO,
+
+        	         OSM(MOD_LCTL),          OSM(MOD_LALT),
+
+			 KC_NO,                  KC_NO,
+
+        	         OSM(MOD_LALT),          OSM(MOD_RCTL),
+
+		         KC_NO
+			 ),
+
+
+
+/*
+
+   Keymap: layer 4 - Emacs keybindings 0
 
    ,---------------------------------------------------------------------------------------------------.                      ,--------------------.
    |        |      |      |      |      |      |      |      |      |      |      |      |      |      |		      |      |      |      |

@@ -1,5 +1,5 @@
 
-
+#include QMK_KEYBOARD_H
 
 typedef struct {
   bool is_press_action;
@@ -23,4 +23,5 @@ enum tap_dance_codes {
   DANCE_1,       // TD1:    tap: F3; hold: Mouse wheel up
   DANCE_2,       // TD2:    tap: tap: OSM(RALT); hold: LALT 
   DANCE_3,       // TD3:    tap: ], hold: mouse left click
+  DANCE_4,       // TD4:    tap: :, hold: OSM(LGUI)
 };                                                                                                     

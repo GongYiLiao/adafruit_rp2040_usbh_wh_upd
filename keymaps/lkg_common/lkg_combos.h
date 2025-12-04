@@ -12,20 +12,24 @@ enum combos {
   M_W_V_OSL_NAVI,
   SCLN_X_MENU,
   E12_TO_NVI,
+  O_E_K_OSL_SYMB,
+  T_N_M_OSL_SYMB,
 };
 
-const uint16_t PROGMEM combo_0[] =  {KC_DOT,     KC_P,          COMBO_END};
-const uint16_t PROGMEM combo_1[] =  {KC_G,       KC_C,          COMBO_END};
-const uint16_t PROGMEM combo_2[] =  {KC_J,       KC_K,          COMBO_END};
-const uint16_t PROGMEM combo_3[] =  {KC_M,       KC_W,          COMBO_END};
-const uint16_t PROGMEM combo_4[] =  {KC_K,       KC_X,          COMBO_END};
-const uint16_t PROGMEM combo_5[] =  {KC_B,       KC_M,          COMBO_END};
-const uint16_t PROGMEM combo_6[] =  {KC_Q,       KC_J,          COMBO_END};
-const uint16_t PROGMEM combo_7[] =  {KC_W,       KC_V,          COMBO_END};
-const uint16_t PROGMEM combo_8[] =  {KC_Q,       KC_J,   KC_K,  COMBO_END};
-const uint16_t PROGMEM combo_9[] =  {KC_M,       KC_W,   KC_V,  COMBO_END};
-const uint16_t PROGMEM combo_10[] = {KC_SCLN,    KC_X,          COMBO_END};
-const uint16_t PROGMEM combo_11[] = {KC_ESC,     KC_1,   KC_2,  COMBO_END};
+const uint16_t PROGMEM combo_0[] =  {KC_DOT,     KC_P,             COMBO_END};
+const uint16_t PROGMEM combo_1[] =  {KC_G,       KC_C,             COMBO_END};
+const uint16_t PROGMEM combo_2[] =  {KC_J,       KC_K,             COMBO_END};
+const uint16_t PROGMEM combo_3[] =  {KC_M,       KC_W,             COMBO_END};
+const uint16_t PROGMEM combo_4[] =  {KC_K,       KC_X,             COMBO_END};
+const uint16_t PROGMEM combo_5[] =  {KC_B,       KC_M,             COMBO_END};
+const uint16_t PROGMEM combo_6[] =  {KC_Q,       KC_J,             COMBO_END};
+const uint16_t PROGMEM combo_7[] =  {KC_W,       KC_V,             COMBO_END};
+const uint16_t PROGMEM combo_8[] =  {KC_Q,       KC_J,   KC_K,     COMBO_END};
+const uint16_t PROGMEM combo_9[] =  {KC_M,       KC_W,   KC_V,     COMBO_END};
+const uint16_t PROGMEM combo_10[] = {KC_SCLN,    KC_X,             COMBO_END};
+const uint16_t PROGMEM combo_11[] = {KC_ESC,     KC_1,   KC_2,     COMBO_END};
+const uint16_t PROGMEM combo_12[] = {KC_O,       KC_E,   KC_K,      COMBO_END};
+const uint16_t PROGMEM combo_13[] = {KC_T,       KC_N,   KC_M,     COMBO_END};
 
 
 
@@ -42,4 +46,6 @@ combo_t key_combos[] = {
   [M_W_V_OSL_NAVI]     = COMBO(combo_9,  OSL(_NAVI)),
   [SCLN_X_MENU]        = COMBO(combo_10, KC_APP),
   [E12_TO_NVI]         = COMBO(combo_11, TO(_NAVI)),
+  [O_E_K_OSL_SYMB]     = COMBO(combo_12,  OSL(_SYMBOL)),
+  [T_N_M_OSL_SYMB]     = COMBO(combo_13,  OSL(_SYMBOL)),
 };

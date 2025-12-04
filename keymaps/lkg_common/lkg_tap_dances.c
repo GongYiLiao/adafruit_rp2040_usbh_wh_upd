@@ -2,7 +2,7 @@
 
 // #include "lkg_tap_dances.h"
 
-static tap dance_state[4];
+static tap dance_state[5];
 
 uint8_t dance_step(tap_dance_state_t *state) {
   if (state->count == 1) {
@@ -112,9 +112,37 @@ void dance_3_reset(tap_dance_state_t *state, void *user_data) {
   dance_state[3].step = 0;
 }
 
+void dance_4_finished(tap_dance_state_t *state, void *user_data) {
+  dance_state[4].step = dance_step(state);
+  switch (dance_state[4].step) {
+  case SINGLE_TAP: register_mods(MOD_BIT(KC_LSFT));register_code16(KC_SCLN); break;
+  case SINGLE_HOLD: register_mods(MOD_BIT(KC_LGUI)); break;
+  case DOUBLE_TAP: break;
+  case TAP_THEN_HOLD: break;
+  case DOUBLE_SINGLE_TAP: break;
+  case MORE_TAPS: break;
+  }
+}
+
+void dance_4_reset(tap_dance_state_t *state, void *user_data) {
+  wait_ms(10);
+  switch (dance_state[4].step) {
+  case SINGLE_TAP: unregister_code16(KC_SCLN);unregister_mods(MOD_BIT(KC_LSFT)); break;
+  case SINGLE_HOLD: unregister_mods(MOD_BIT(KC_LGUI)); break;
+  case DOUBLE_TAP: break;
+  case TAP_THEN_HOLD: break;
+  case DOUBLE_SINGLE_TAP: break;
+  case MORE_TAPS: break;
+  }
+  dance_state[4].step = 0;
+}
+
+
+
 tap_dance_action_t tap_dance_actions[] = {
   [DANCE_0] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_0_finished, dance_0_reset),
   [DANCE_1] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_1_finished, dance_1_reset),
   [DANCE_2] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_2_finished, dance_2_reset),
   [DANCE_3] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_3_finished, dance_3_reset),
+  [DANCE_4] = ACTION_TAP_DANCE_FN_ADVANCED(NULL, dance_4_finished, dance_4_reset),
 };
