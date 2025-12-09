@@ -1,6 +1,8 @@
 // Copyright 2023 sekigon-gonnoc
 // SPDX-License-Identifier: GPL-2.0-or-later
 
+#define PIO_USB_DP_PIN_DEFAULT 16
+
 #include "c1.h"
 #include "tusb.h"
 #include "pio_usb.h"
