@@ -14,6 +14,11 @@
     "virtser": true,
     "pointing_device": true
   },
+  "usb": {
+     "vid": "0x239A", 
+     "pid": "0x5723",
+     "device_version": "0.0.1"
+  },
   "qmk": {
     "tap_keycode_delay": 10
   },
@@ -65,11 +70,6 @@
   },
   "processor": "RP2040",
   "url": "",
-  "usb": {
-    "device_version": "1.0.0",
-    "pid": "0x999B",
-    "vid": "0xFEED"
-  },
   "layouts": {
     "LAYOUT_ka500": {
       "layout": [
